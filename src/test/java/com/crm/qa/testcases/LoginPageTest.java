@@ -3,7 +3,7 @@ package com.crm.qa.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
@@ -51,23 +51,7 @@ public class LoginPageTest extends TestBase{
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	
-	
-//	@DataProvider
-//	public Object[][] getCRMTestData(){
-//		Object data[][] = TestUtil.getTestData("contacts");
-//		return data;
-//	}
-//	
-//	
-//	@Test(priority=0, dataProvider="getCRMTestData")
-//	public void validateCreateNewContact(String title, String firstName, String lastName, String company){
-//	
-//	System.out.println(title + " " +firstName + " " + lastName + " " + company); 
-//		
-//		}
-//	
-	
+
 	
 	
 	
