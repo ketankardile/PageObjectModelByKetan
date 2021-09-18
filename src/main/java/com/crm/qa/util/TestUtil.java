@@ -16,13 +16,13 @@ import com.crm.qa.base.TestBase;
 public class TestUtil extends TestBase {
 
 	
-	//in test util you have to add code which we are going to use most commonly - EX- add card xpath mostly remain same 
+	//in test util you have to add code which we are going to use most commonly - EX- add cart xpath mostly remain same 
 	//for all the pages //iframe switch frame code // excel sheet for @dataprovidee //screenshot code
 	
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH = "D:\\Eclipse_Project\\PageObjectModel\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "D:\\Eclipse_Project\\PageObjectModelByKetan\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
