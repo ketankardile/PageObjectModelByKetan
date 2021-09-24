@@ -14,18 +14,18 @@ import com.crm.qa.util.TestUtil;
 public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
 	HomePage homePage;
-	TestUtil testUtil;
+	
 	
 	public LoginPageTest(){
 		
 		super();
-		System.out.println("constructor of login page");
+		
 	}
 
 	
 	@BeforeClass
 	public void setUp(){
-		System.out.println("this is called after calling constructor of current class");
+		
 		initialization();
 		loginPage = new LoginPage();	
 	}
@@ -48,6 +48,7 @@ public class LoginPageTest extends TestBase{
 	
 	@Test(priority=3)
 	public void loginTest(){
+		
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
@@ -55,10 +56,11 @@ public class LoginPageTest extends TestBase{
 	
 	
 	
-	@AfterClass
-	public void tearDown(){
-		driver.quit();
-	}
+//	@AfterClass
+//	public void tearDown(){
+//		
+//		driver.quit();
+//	}
 	
 	
 	
