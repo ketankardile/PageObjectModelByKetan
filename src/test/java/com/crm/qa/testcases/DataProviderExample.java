@@ -21,6 +21,9 @@ public class DataProviderExample {
 		return data;
 	}
 
+	
+	
+
 
 	@Test(priority = 2, dataProvider="getCRMTestData")
 	public void validateCreateNewContact(String title, String firstName, String lastName, String company){
